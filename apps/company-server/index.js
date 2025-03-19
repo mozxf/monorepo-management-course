@@ -1,10 +1,10 @@
-const http = require('http');
+const http = require("http");
 
-console.log('Hello World');
+console.log("Hello World");
 
 const app = http.createServer(async (req, res) => {
-  res.write(JSON.stringify({ message: 'Hello World, Node.JS Server' }));
-  res.end();
+	res.write(JSON.stringify({ message: "Hello World, Node.JS Server" }));
+	res.end();
 });
 
-app.listen(3001);
+app.listen(3002);
