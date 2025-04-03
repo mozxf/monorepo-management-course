@@ -1,0 +1,12 @@
+{
+	"name": "@company/commons-demo-package",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.ts",
+	"scripts": {
+		"start": "echo 'Hello world'"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC"
+}

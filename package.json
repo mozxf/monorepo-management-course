@@ -10,11 +10,17 @@
 	"scripts": {
 		"front": "npm exec --workspace=company-front",
 		"server": "npm exec --workspace=company-server",
+		"generator": "npm exec --workspace=@company/commons-generator",
 		"dev:front": "npm run front -- npm run dev",
 		"dev:server": "npm run server -- npm run dev",
-		"start:server": "npm run server -- npm start"
+		"start:server": "npm run server -- npm start",
+		"gen": "npm run generator -- npm run gen",
+		"dev": "concurrently -c red,yellow -n Front,Server  \"npm run dev:front\" \"npm run dev:server\""
 	},
 	"keywords": [],
 	"author": "",
-	"license": "ISC"
+	"license": "ISC",
+	"devDependencies": {
+		"concurrently": "^9.1.2"
+	}
 }
